@@ -12,5 +12,10 @@ class Nodo {
         this.frecuencia = 1;
         this.izquierda = this.derecha = null;
     }
+    public void setPaginas(int pagina) {
+        if (!paginas.contains(pagina)) {
+            paginas.add(pagina);
+        }
+    }
 }
 

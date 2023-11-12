@@ -21,7 +21,7 @@ public class Diccionario {
             nodo.derecha = insertarRec(nodo.derecha, palabra, pagina);
         } else {
             // Si la palabra ya existe, actualiza las páginas y la frecuencia
-            nodo.paginas.add(pagina);
+            nodo.setPaginas(pagina);
             nodo.frecuencia++;
         }
 
